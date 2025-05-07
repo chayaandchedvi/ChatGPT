@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="he">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>מערכת תקשורת</title>
+
+    <link rel="stylesheet" href="../css/app.css">
+
+    <style>
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>מערכת תקשורת</h1>
+
+
+        <div id="messages"></div>
+
+
+        <div class="message-container" id="client1">
+
+            <h2>client 1</h2>
+
+            <select class="recipient-options" id="select_client1">
+
+                <option value="" disabled selected>בחר נמען</option>
+
+                <option value="client2"> client 2</option>
+
+                <option value="client3"> client 3</option>
+
+            </select>
+
+            <input type="text" class="message-input" id="mess_client1" placeholder="הזן הודעה" />
+
+            <button class="send-message" id="button1">שלח הודעה</button>
+
+            <textarea class="received-messages" id="received_client1" readonly></textarea>
+            
+            <div class="cable" id="cable1"></div> <!-- Cable to the server -->
+            <div class="container" id="circleContainer1"></div>
+
+        </div>
+
+
+        <div class="message-container" id="client2">
+
+            <h2>client 2</h2>
+
+            <select class="recipient-options" id="select_client2">
+
+                <option value="" disabled selected>בחר נמען</option>
+
+                <option value="client3">client 3</option>
+
+                <option value="client1"> client 1</option>
+
+            </select>
+
+            <input type="text" class="message-input" id="mess_client2" placeholder="הזן הודעה" />
+
+            <button class="send-message" id="button2">שלח הודעה</button>
+
+            <textarea class="received-messages" id="received_client2" readonly></textarea>
+            
+            <div class="cable" id="cable2"></div> <!-- Cable to the server -->
+            <div class="container" id="circleContainer2"></div>
+
+        </div>
+
+
+        <div class="message-container" id="client3">
+
+            <h2>client 3</h2>
+
+            <select class="recipient-options" id="select_client3">
+
+                <option value="" disabled selected>בחר נמען</option>
+
+                <option value="client1"> client 1 </option>
+
+                <option value="client2"> client 2</option>
+
+            </select>
+
+            <input type="text" class="message-input" id="mess_client3" placeholder="הזן הודעה" />
+
+            <button class="send-message" id="button3">שלח הודעה</button>
+
+            <textarea class="received-messages" id="received_client3" readonly></textarea>
+            
+            <div class="cable" id="cable3"></div> <!-- Cable to the server -->
+            <div class="container" id="circleContainer3"></div>
+
+        </div>
+
+
+
+        <!-- Server Box -->
+
+        <div class="server-box">
+
+            Server
+
+        </div>
+
+        <div id="square_client1"></div>
+
+        <div id="square_client2"></div>
+
+        <div id="square_client3"></div>
+
+
+    </div>
+
+
+    <script src="../js/package.js"></script>
+
+    <script src="../js/server.js"></script>
+
+    <script src="../js/cable.js"></script>
+
+    <script src="../js/client.js"></script>
+
+    <script src="../js/app.js"></script>
+
+</body>
+
+</html>
